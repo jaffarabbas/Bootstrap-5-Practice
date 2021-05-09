@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Site</title>
+    <link rel="stylesheet" href="PracticeSite/css/bootstrap.min.css"/>
+    <style>
+        [class*="col"]{
+            border: 2px solid #fff;
+            padding: 1rem;
+            color:#fff;
+        }
+        .writing{
+            margin-top:50px;
+            padding-right:10px;
+        }
+        @media screen and (max-width:990px){
+            [class*="col"]{
+                display: flex;
+                flex-direction: column;
+            }
+            #d1,#d2{
+                padding:20;
+                margin:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm bg-danger">1</div>
+            <div class="col-sm bg-danger">1</div>
+            <div class="col-sm bg-danger">1</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 col-md-6 col-sm" id="d1" >
+                <img src="PracticeSite/img/Team building _Monochromatic.png">
+            </div>
+            <div class="col-lg-6 col-md-6  col-sm" id="d2" >
+                <div class="writing">
+                    <h1 class="text-dark">Heading 1</h1>
+                    <p class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error dolorem commodi alias ipsum, maiores illo eius ducimus, necessitatibus placeat debitis nobis perferendis doloribus quis praesentium? Repudiandae iusto tempora saepe atque?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="PracticeSite/js/bootstrap.min.js"></script>
+</html>
